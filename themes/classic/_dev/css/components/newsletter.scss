@@ -1,19 +1,17 @@
 .block_newsletter {
   @include search-box();
-  float: inherit;
+  position: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 50rem;
-  margin: auto;
-  margin-bottom: 0.625rem;
+  padding: 1.563rem 0;
   clear: both;
   font-size: $font-size-sm;
-  background: $white;
 
   #block-newsletter-label {
-    font-size: 1.3125rem;
-    line-height: 1.75rem;
-    color: $gray-darker;
+    color: $white;
   }
+
 
   form {
     .input-wrapper {
@@ -21,11 +19,10 @@
     }
 
     .row {
-      .col-xs-12:last-of-type {
-        p {
-          font-size: 0.75rem;
-          color: $gray;
-        }
+
+      p {
+        font-size: 0.75rem;
+        color: $white;
       }
 
       .col-xs-12:first-of-type {
@@ -37,24 +34,25 @@
 
     input[type="email"] {
       width: 100%;
+      outline: 0 !important;
       padding: 11px;
-      border: 1px solid $border-gray;
-
+      border: 1px solid $gray;
+      border-radius: 5px;
       &:focus {
-        padding: 8px 8px 9px;
-        border: 3px $brand-primary solid;
-        outline: 0;
+        border-color: $brand-primary;
       }
     }
 
     input {
       height: 42px;
-      box-shadow: none;
     }
   }
 }
 
 #footer {
+  .footer-top{
+    background-color: $gray-dark;
+  }
   .block_newsletter {
     p {
       padding-top: $small-space;
@@ -63,6 +61,7 @@
     #block-newsletter-label {
       padding-top: 0;
     }
+
   }
 }
 

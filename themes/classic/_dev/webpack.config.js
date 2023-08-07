@@ -36,6 +36,9 @@ let config = {
     path: path.resolve(__dirname, '../assets/js'),
     filename: '[name].js',
   },
+  resolve: {
+    preferRelative: true,
+  },
   module: {
     rules: [
       {
@@ -51,7 +54,7 @@ let config = {
       },
       {
         test: /\.scss$/,
-        use:[ 
+        use:[
             MiniCssExtractPlugin.loader,
             'css-loader',
             'postcss-loader',

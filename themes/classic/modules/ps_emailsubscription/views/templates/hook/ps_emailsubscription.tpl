@@ -25,8 +25,11 @@
 
 <div class="block_newsletter col-lg-8 col-md-12 col-sm-12" id="blockEmailSubscription_{$hookName}">
   <div class="row">
-    <p id="block-newsletter-label" class="col-md-5 col-xs-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
-    <div class="col-md-7 col-xs-12">
+    <div class="col-md-6 col-xs-12 text-white">
+      <h2>{l s='Êtes-vous un professionnel ?' d='Shop.Theme.Global'}</h2>
+      <p>{l s='Profitez d’offres promotionnels et goûter à notre pain !' d='Shop.Theme.Global'}</p>
+      </div>
+    <div class="col-md-6 col-xs-12">
       <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
         <div class="row">
           <div class="col-xs-12">
@@ -47,7 +50,7 @@
                 name="email"
                 type="email"
                 value="{$value}"
-                placeholder="{l s='Your email address' d='Shop.Forms.Labels'}"
+                placeholder="{l s='Email address' d='Shop.Forms.Labels'}"
                 aria-labelledby="block-newsletter-label"
                 required
               >
