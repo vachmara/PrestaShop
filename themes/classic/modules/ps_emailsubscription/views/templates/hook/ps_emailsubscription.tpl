@@ -24,7 +24,7 @@
  *}
 
 <div class="block_newsletter col-lg-8 col-md-12 col-sm-12" id="blockEmailSubscription_{$hookName}">
-  <div class="row">
+  <div class="row m-0">
     <div class="col-md-6 col-xs-12 text-white">
       <h2>{l s='Êtes-vous un professionnel ?' d='Shop.Theme.Global'}</h2>
       <p>{l s='Profitez d’offres promotionnels et goûter à notre pain !' d='Shop.Theme.Global'}</p>
@@ -40,7 +40,7 @@
               value="{l s='Subscribe' d='Shop.Theme.Actions'}"
             >
             <input
-              class="btn btn-primary float-xs-right hidden-sm-up"
+              class="btn btn-primary float-xs-right hidden-sm-up ml-1"
               name="submitNewsletter"
               type="submit"
               value="{l s='OK' d='Shop.Theme.Actions'}"

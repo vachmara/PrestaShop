@@ -684,17 +684,23 @@
   flex-wrap: wrap;
   width: 100%;
   pointer-events: none;
+  padding-left: 20px;
 
   li.product-flag {
     width: fit-content;
     padding: 0.3125rem 0.4375rem;
     margin-top: $small-space;
     font-size: $base-font-size;
-    font-weight: 700;
+    font-weight: 600;
+    border-radius: $border-radius;
     color: $white;
     text-transform: uppercase;
     pointer-events: auto;
     background: $brand-primary;
+
+    &.new{
+      display: none;
+    }
 
     &.online-only {
       position: absolute;

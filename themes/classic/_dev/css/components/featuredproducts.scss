@@ -4,15 +4,18 @@ $product-description-height: 70px;
 #products,
 .featured-products,
 .product-accessories {
+
+
   .products {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .products-section-title {
     margin: 2.5rem 0;
-    font-weight: 500;
+    font-weight: 700;
+    color: $gray-dark;
     text-align: center;
   }
 
@@ -52,9 +55,9 @@ $product-description-height: 70px;
   }
 
   .product-title a {
-    font-size: $font-size-sm;
-    font-weight: 400;
-    color: $gray;
+    font-size: $font-size-h3;
+    font-weight: 600;
+    color: $gray-dark;
     text-align: center;
     text-decoration: none;
   }
@@ -64,7 +67,10 @@ $product-description-height: 70px;
     height: auto;
     margin-bottom: 1.563rem;
     overflow: hidden;
+    padding: 20px;
     background: $white;
+    box-shadow: 0px 8px 55px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
 
     &:hover,
     &:focus {
