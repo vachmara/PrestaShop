@@ -52,6 +52,18 @@
       </header>
 
       <section id="wrapper">
+        <section id="before">
+          <div class="img-before"></div>
+          <div class="container">
+            <div class="row">
+              <div id="AB" class="partner"></div>
+              <div id="Levain" class="partner"></div>
+              <div id="France" class="partner"></div>
+              <div id="Farines" class="partner"></div>
+              <div id="Certif" class="partner"></div>
+            </div>
+          </div>
+        </section>
         {block name='notifications'}
           {include file='_partials/notifications.tpl'}
         {/block}

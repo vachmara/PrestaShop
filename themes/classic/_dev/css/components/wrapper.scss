@@ -1,6 +1,84 @@
 #wrapper {
-  padding-top: 1.563rem;
-  background: linear-gradient(180deg, rgba(135, 135, 135, 0.02) 0%, rgba(217, 217, 217, 0.00) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(135, 135, 135, 0.02) 0%,
+    rgba(217, 217, 217, 0) 100%
+  );
+
+  #before {
+    .img-before {
+      min-height: 200px;
+      background-image: url("../img/index.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      div {
+        .partner {
+          background-repeat: no-repeat;
+          margin: 0 20px;
+          background-size: contain;
+        }
+        #AB {
+          background-image: url("../img/AB.png");
+          width: 30px;
+        }
+        #Levain {
+          background-image: url("../img/Levain.png");
+          width: 45px;
+        }
+        #France {
+          background-image: url("../img/France.png");
+          width: 40px;
+        }
+        #Farines {
+          background-image: url("../img/Farines.png");
+          width: 35px;
+        }
+        #Certif {
+          background-image: url("../img/Certif.png");
+          width: 30px;
+        }
+      }
+    }
+    @media (min-width: 1200px) {
+      .img-before {
+        background-size: cover;
+        height: 800px;
+      }
+      div {
+        div {
+          .partner{
+            margin: 0 32px;
+          }
+          #AB {
+            width: 52px;
+            height: 74px;
+          }
+          #Levain {
+            width: 98px;
+            height: 100px;
+          }
+          #France {
+            width: 90px;
+            height: 78px;
+          }
+          #Farines {
+            width: 65px;
+            height: 72px;
+          }
+          #Certif {
+            width: 66px;
+            height: 78px;
+          }
+        }
+      }
+    }
+  }
 
   .banner {
     display: block;

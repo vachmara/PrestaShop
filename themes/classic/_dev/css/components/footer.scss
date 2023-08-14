@@ -2,6 +2,24 @@
   padding-top: 2.5rem;
 }
 
+.footer-pros{
+  padding: 1.5rem 0;
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $gray;
+    gap: 1rem;
+  }
+}
+
+.footer-container{
+  .container-fluid{
+    padding: 0 3rem;
+    max-width: 1800px;
+  }
+}
+
 .block-contact {
   font-size: 0.875rem;
   color: $gray;
