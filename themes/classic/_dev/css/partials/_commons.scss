@@ -74,7 +74,8 @@ label .color,
 }
 
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-primary-outline{
   padding: 0.5rem 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -83,6 +84,18 @@ label .color,
     margin-right: $small-space;
   }
 }
+
+.btn-primary-outline{
+  background-color: $white;
+  border-color: $brand-primary;
+  color: $brand-primary;
+}
+
+.btn-primary-outline:hover, .btn-primary-outline:focus{
+  background-color: $brand-primary;
+  color: $white;
+}
+
 
 .btn-tertiary {
   @extend .btn-secondary;

@@ -43,7 +43,7 @@
         {hook h='displayFooterAfter'}
       {/block}
     </div>
-    <div class="row footer-pros">
+    <div class="row footer-pros hidden-sm-down">
       <div class="col-md-3 offset-md-3">
         <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

@@ -20,6 +20,20 @@
   }
 }
 
+.block-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  div{
+    width: 152px;
+    height: 118px;
+    background-image: url("../img/logo.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .block-contact {
   font-size: 0.875rem;
   color: $gray;

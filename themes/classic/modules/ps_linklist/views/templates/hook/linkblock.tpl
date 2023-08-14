@@ -22,36 +22,41 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<div class="col-md-6 links">
+<div class="col-md-2 links">
   <div class="row">
-  {foreach $linkBlocks as $linkBlock}
-    <div class="col-md-6 wrapper">
-      <p class="h3 hidden-sm-down">{$linkBlock.title}</p>
-      <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_{$linkBlock.id}" data-toggle="collapse">
-        <span class="h3">{$linkBlock.title}</span>
-        <span class="float-xs-right">
-          <span class="navbar-toggler collapse-icons">
-            <i class="material-icons add">&#xE313;</i>
-            <i class="material-icons remove">&#xE316;</i>
+    {foreach $linkBlocks as $linkBlock}
+      <div class="col-md-12 wrapper">
+        <p class="h3 hidden-sm-down">{$linkBlock.title}</p>
+        <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_{$linkBlock.id}" data-toggle="collapse">
+          <span class="h3">{$linkBlock.title}</span>
+          <span class="float-xs-right">
+            <span class="navbar-toggler collapse-icons">
+              <i class="material-icons add">&#xE313;</i>
+              <i class="material-icons remove">&#xE316;</i>
+            </span>
           </span>
-        </span>
+        </div>
+        <ul id="footer_sub_menu_{$linkBlock.id}" class="collapse">
+          {foreach $linkBlock.links as $link}
+            <li>
+              <a id="{$link.id}-{$linkBlock.id}" class="{$link.class}" href="{$link.url}" title="{$link.description}"
+                {if !empty($link.target)} target="{$link.target}" {/if}>
+                {$link.title}
+              </a>
+            </li>
+          {/foreach}
+        </ul>
       </div>
-      <ul id="footer_sub_menu_{$linkBlock.id}" class="collapse">
-        {foreach $linkBlock.links as $link}
-          <li>
-            <a
-                id="{$link.id}-{$linkBlock.id}"
-                class="{$link.class}"
-                href="{$link.url}"
-                title="{$link.description}"
-                {if !empty($link.target)} target="{$link.target}" {/if}
-            >
-              {$link.title}
-            </a>
-          </li>
-        {/foreach}
-      </ul>
-    </div>
-  {/foreach}
+    {/foreach}
+  </div>
+</div>
+<div class="col-md-2 hidden-sm-down">
+  <div class="row">
+    <button class="col-md-12 btn btn-primary">
+      {l s='Créer un compte' d='Shop.Theme.Actions'}
+    </button>
+    <button class="col-md-12 btn btn-primary-outline">
+      {l s='Se connecter' d='Shop.Theme.Actions'}
+    </button>
   </div>
 </div>
